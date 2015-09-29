@@ -1,0 +1,11 @@
+{
+  "name": "nativescript-ios-uuid",
+  "version": "0.0.1",
+  "main": "index.js",
+  "nativescript": {
+    "id": "org.nativescript.iosuuid",
+    "platforms": {
+      "ios": "1.3.0"
+    }
+  }
+}
