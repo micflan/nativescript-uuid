@@ -3,7 +3,7 @@ function getUUID() {
     var strApplicationUUID = SSKeychain.passwordForServiceAccount(appName, "incoding");
     if (!strApplicationUUID){
         strApplicationUUID = UIDevice.currentDevice().identifierForVendor.UUIDString;
-        SSKeychain().setPasswordForServiceAccount(strApplicationUUID, appName, "incoding");
+        SSKeychain.setPasswordForServiceAccount(strApplicationUUID, appName, "incoding");
     }
 
     return strApplicationUUID;
