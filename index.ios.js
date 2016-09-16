@@ -1,8 +1,8 @@
 function getUUID() {
-    var appName = NSBundle.mainBundle().infoDictionary.objectForKey(kCFBundleNameKey);
+    var appName = NSBundle.mainBundle.infoDictionary.objectForKey(kCFBundleNameKey);
     var strApplicationUUID = SSKeychain.passwordForServiceAccount(appName, "incoding");
     if (!strApplicationUUID){
-        strApplicationUUID = UIDevice.currentDevice().identifierForVendor.UUIDString;
+        strApplicationUUID = UIDevice.currentDevice.identifierForVendor.UUIDString;
         SSKeychain.setPasswordForServiceAccount(strApplicationUUID, appName, "incoding");
     }
 
