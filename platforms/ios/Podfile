@@ -1,1 +1,1 @@
-pod 'SSKeychain'
+pod 'SAMKeychain', '~> 1.5.3'
